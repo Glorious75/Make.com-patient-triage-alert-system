@@ -2,7 +2,7 @@
 
 **Make.com automation · Built by Gloria Njorteah · April 2026**
 
-A 3-scenario Make.com automation reducing clinical triage response time from 90 mins to under 2 minutes. Google Form → Airtable CRM → Slack urgency alerts (#urgent-triage, #medium-triage) + daily 24hr escalation check. Zero missed high-priority patients.
+A 3-scenario automation that cuts clinical triage response time from **90 minutes to under 2 minutes**. Patient intake forms are automatically captured in Airtable, triaged by urgency level, and escalated via Slack — with zero manual intervention.
 
 ---
 
@@ -56,7 +56,7 @@ Clinics lose critical time when patient intake forms are processed manually. Rec
 
 ### S1 · Patient Intake Capture
 
-![S1 — Patient Intake Capture](S1-Patient_form_intake.jpg)
+![S1 — Patient Intake Capture](S1-Patient%20form%20intake.jpg)
 
 Every new Google Form submission is automatically captured and stored in Airtable with `Status = Open`. No manual data entry. No delay.
 
@@ -67,7 +67,7 @@ Every new Google Form submission is automatically captured and stored in Airtabl
 
 ### S2 · Urgency Triage Alert
 
-![S2 — Urgency Triage Alert](S2-Urgency_Traige_Alert.jpg)
+![S2 — Urgency Triage Alert](S2-Urgency%20Traige%20Alert.jpg)
 
 New Airtable records are watched in real time. A Router reads the `Urgency Level` field and routes the alert to the correct Slack channel instantly.
 
@@ -81,7 +81,7 @@ New Airtable records are watched in real time. A Router reads the `Urgency Level
 
 ### S3 · 24hr Escalation Alert
 
-![S3 — 24hr Escalation Alert](24-hours_Escalation_Alert.jpg)
+![S3 — 24hr Escalation Alert](24-hours%20Escalation%20Alert.jpg)
 
 Runs automatically every day at **8:00 AM**. Searches Airtable for any High urgency cases that have been open for more than 24 hours and fires an escalation alert to `#triage-escalations`.
 
@@ -92,7 +92,7 @@ Runs automatically every day at **8:00 AM**. Searches Airtable for any High urge
 
 ## 🗄️ Airtable Database
 
-![Airtable Patient Triage Database](Airtable__Database_CRM.jpg)
+![Airtable Patient Triage Database](Airtable%20_Database%20CRM.jpg)
 
 The `Intake Records` table in Airtable serves as the central CRM — storing all patient records with real-time Status tracking across 11 structured fields: Name, Date of Birth, Contact Number, Primary Symptoms, Urgency Level, Duration, Preferred Doctor, Status, and Submission Timestamp.
 
@@ -100,19 +100,9 @@ The `Intake Records` table in Airtable serves as the central CRM — storing all
 
 ## 💬 Live Slack Alert — #urgent-triage
 
-![High Urgency Slack Notification](High_Ugency_slack_notificatio_.jpg)
+![High Urgency Slack Notification](High%20Ugency%20slack%20notificatio%20.jpg)
 
-Real-time HIGH URGENCY alert fired to `#urgent-triage` for patient **Fabian Greatness** — Tiredness & Dizziness, 5 days — instantly notifying the clinical team with full patient details.
-
-```
-🚨 HIGH URGENCY PATIENT ALERT 🚨
-Patient:          Fabian Greatness
-Contact number:   08061689356
-Primary symptom:  Tiredness & Dizziness   Duration: 5 days
-Preferred Doctor: GP
-Submitted:        2026-04-02T17:35:56.000Z
-@channel — Please review immediately! 🚨
-```
+Real-time HIGH URGENCY alert fired to `#urgent-triage` for patient **Fabian Greatness** — Tiredness & Dizziness, 5 days — instantly notifying the clinical team with full patient details including contact number, symptoms, duration, preferred doctor, and submission timestamp.
 
 ---
 
@@ -145,12 +135,12 @@ Submitted:        2026-04-02T17:35:56.000Z
 Make.com-patient-triage-alert-system/
 │
 ├── README.md
-├── patient_triage_workflow_v2.jpg     ← All 3 scenarios overview
-├── S1-Patient_form_intake.jpg         ← S1 — Intake capture
-├── S2-Urgency_Traige_Alert.jpg        ← S2 — Urgency triage
-├── 24-hours_Escalation_Alert.jpg      ← S3 — 24hr escalation
-├── Airtable__Database_CRM.jpg         ← Airtable patient records
-└── High_Ugency_slack_notificatio_.jpg ← Live Slack alert
+├── patient_triage_workflow_v2.jpg      ← All 3 scenarios overview
+├── S1-Patient form intake.jpg          ← S1 — Intake capture
+├── S2-Urgency Traige Alert.jpg         ← S2 — Urgency triage
+├── 24-hours Escalation Alert.jpg       ← S3 — 24hr escalation
+├── Airtable _Database CRM.jpg          ← Airtable patient records
+└── High Ugency slack notificatio .jpg  ← Live Slack alert
 ```
 
 ---
