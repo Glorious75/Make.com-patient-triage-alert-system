@@ -11,7 +11,7 @@ A 3-scenario automation that cuts clinical triage response time from **90 minute
 | Field | Detail |
 |---|---|
 | **Platform** | Make.com |
-| **Scenarios** | 3 — Intake Capture · Urgency Triage · 24hr Escalation |
+| **Scenarios** | 3 Intake Capture · Urgency Triage · 24hr Escalation |
 | **Trigger** | Google Form submission · Airtable record watch · Daily 8AM schedule |
 | **Actions** | Airtable record creation · Slack urgency alerts · 24hr escalation |
 | **Channels** | #urgent-triage · #medium-triage · #triage-escalations |
