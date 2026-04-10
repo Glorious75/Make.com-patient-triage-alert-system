@@ -1,10 +1,8 @@
-# Make.com-patient-triage-alert-system
-A 3-scenario Make.com automation reducing clinical triage response time from 90 mins to under 2 minutes. Google Form → Airtable CRM → Slack urgency alerts (#urgent-triage, #medium-triage) + daily 24hr escalation check. Zero missed high-priority patients.
 # 🚨 Patient Triage Alert System
 
 **Make.com automation · Built by Gloria Njorteah · April 2026**
 
-A 3-scenario automation that cuts clinical triage response time from **90 minutes to under 2 minutes**. Patient intake forms are automatically captured in Airtable, triaged by urgency level, and escalated via Slack — with zero manual intervention.
+A 3-scenario Make.com automation reducing clinical triage response time from 90 mins to under 2 minutes. Google Form → Airtable CRM → Slack urgency alerts (#urgent-triage, #medium-triage) + daily 24hr escalation check. Zero missed high-priority patients.
 
 ---
 
